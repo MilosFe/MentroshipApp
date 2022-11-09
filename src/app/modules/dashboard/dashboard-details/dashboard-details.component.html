@@ -1,0 +1,9 @@
+<div class="container" *ngIf="true" [formGroup]="profileForm">
+    <app-text-input [label]="'Name'" type="text" [placeholder]="''" formControlName="name"></app-text-input>
+    <app-text-input [label]="'Tech stack'" type="text" [placeholder]="''" formControlName="techStack"></app-text-input>
+</div>
+
+<app-text-input [label]="'Tech stack'" type="text" [placeholder]="''" [(ngModel)]="testModel"></app-text-input>
+
+
+<input type="text" [(ngModel)]="testModel">

@@ -1,0 +1,20 @@
+<div id="app">
+
+    <input id="text-input" #coffe>
+    <div id="typeahead-container" *ngIf="beers">
+        <h1 *ngFor="let item of beers"> {{item.name}}</h1>
+    </div>
+</div>
+
+
+<div>
+
+</div>
+
+<table>
+    <tr *ngFor="let file of files">
+        <th>{{file.name}}</th>
+        <th>{{file.type}}</th>
+        <th>{{file.size | filesize}}</th>
+    </tr>
+</table>

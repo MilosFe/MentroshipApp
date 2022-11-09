@@ -1,0 +1,39 @@
+<div class="container">
+    <app-auth-page (submitted)="logIn($event)">
+        <h3>Login</h3>
+        <p>Already signed in</p>
+        <button type="submit">Login</button>
+    </app-auth-page>
+    <app-auth-page (submitted)="signUp($event)">
+        <h3>SigUp</h3>
+        <p>You need to sign up</p>
+        <button type="submit">Sign Up</button>
+    </app-auth-page>
+
+</div>
+
+
+<app-modal [showModal]="show1">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some text in the Modal..</p>
+    </div>
+
+</app-modal>
+
+<app-modal [showModal]="show2">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>Some other text</p>
+    </div>
+
+</app-modal>
+
+<div class="container">
+    <button (click)="show1 = true">Show 1 </button>
+    <button (click)="show2 = true">Show 2 </button>
+</div>

@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Mladen Rejlic",
+      "email": "mladen@gmail.com",
+      "techStack": "Frontend",
+      "expirianceYears": "3"
+    },
+    {
+      "id": 2,
+      "name": "Miomir",
+      "email": "miomir@gmail.com",
+      "techStack": "Frontend",
+      "expirianceYears": 2
+    },
+    {
+      "id": 3,
+      "name": "Marija",
+      "email": "marrija@gmail.com",
+      "techStack": "Backend",
+      "expirianceYears": 3
+    }
+  ]
+}

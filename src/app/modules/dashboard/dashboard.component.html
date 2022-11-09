@@ -1,0 +1,43 @@
+<h1>Dashboard Componet</h1>
+<p>Lorem ipsum dolor sit amet, consectet</p>
+
+
+<table>
+    <tr *ngFor="let item of passangers$ | async">
+        <th><a routerLink="details/{{item.id}}">{{item.name}}</a></th>
+        <th>{{item.techStack}}</th>
+        <th>{{item.expirianceYears}}</th>
+    </tr>
+</table>
+
+
+<table>
+    <tr *ngFor="let item of users$ | async">
+        <th>{{item.song}}</th>
+    </tr>
+</table>
+
+
+
+
+<!-- 
+
+<div class="form">
+    <div tooltip="3 digits, back of your card" #myTooltip="tooltip" appTooltip>
+        Enter your security code
+        <span (mouseover)="myTooltip.show()" (mouseout)="myTooltip.hide()">
+            (?)
+        </span><br>
+
+    </div>
+    <input type="text">
+
+</div>
+
+<input class="creditCard" [delimiter]="'-'" appCreditCard>
+
+<input type="text" ngModel #coffe>
+<p>{{coffe.value}}</p>
+
+
+<button appDebounce (debounced)="log()" [debounceTime]="10000">Debounce me the click</button> -->
