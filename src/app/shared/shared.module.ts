@@ -6,10 +6,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextInputComponent } from './components/text-input/text-input.component';
 import { MatInput, MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { SelectComponent } from './select/select.component';
 
 @NgModule({
-  declarations: [ModalComponent, FilesizePipe, TextInputComponent, SelectComponent],
+  declarations: [ModalComponent, FilesizePipe, TextInputComponent],
   imports: [
     CommonModule,
     FormsModule,
